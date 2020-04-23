@@ -1,0 +1,812 @@
+/*–––––––TYPE––––––––––––––––––––––––––––––––––––*/
+@font-face{
+	font-family: CooperMedium;
+	src: url(type/CooperHewitt-Medium.otf);
+}
+@font-face{
+	font-family: CooperSemiBold;
+	src: url(type/CooperHewitt-Semibold.otf);
+}
+@font-face{
+	font-family: CooperBold;
+	src: url(type/CooperHewitt-Bold.otf);
+}
+
+/*–––––––GENERAL––––––––––––––––––––––––––––––––––––*/
+body{
+	margin: 0px;
+	width: 100vw;
+	height: 1500vh;
+}
+.grab:hover {
+	cursor: -webkit-grab; 
+	cursor: grab;
+}
+.grab:active{
+	cursor: -webkit-grabbing; 
+	cursor: grabbing;
+}
+/*–––––––MAIN-MENU––––––––––––––––––––––––––––––––––––*/
+.mainMenu{
+	left: 2vw;
+	top: 0vh;
+
+	width: 3vw;
+	height: 1vw;
+
+	position: fixed;
+	z-index: 100;
+
+	background-color: white; 
+	outline-style: solid;
+	outline-color: :black;
+	outline-width: calc(.25vw + .25vh);
+	color: black;
+
+	font-size: calc(2vw + 2vh);
+}
+.mainMenu:hover{
+	width: 10vw;
+	height:30vh;
+	transition: height .75s, width .75s;
+}
+.mainMenu #menuItems{
+	color: transparent;
+}
+.mainMenu:hover #menuItmes{
+	color: black;
+}
+/*–––––––TITLE––––––––––––––––––––––––––––––––––––*/
+.title{
+	top: 0vh;
+	left: 0vw;
+
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background-image: url(img/cruise.gif);
+	z-index: 5;
+}
+.titleCard{
+	width: 100vw;
+	height: 30vh;
+	top: 80vh;
+	left: 0vw;
+	position: fixed;
+}
+.titleMain{
+	font-family: CooperBold;
+	font-size: calc(2vw + 2vh);
+	color: #e0d60d;
+	-webkit-text-stroke: calc(.15vw + .15vh) black;
+	text-align: center;
+	z-index: 10;
+
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+/*–––––––INTRO––––––––––––––––––––––––––––––––––––*/
+.introductionMain{
+	width: 50vw;
+	height: 75vh;
+	left: 25vw;
+	top: 100vh;
+	z-index: 15;
+	position: absolute;
+
+	background-color: white;
+	outline-style: solid;
+	outline-color: :black;
+	outline-width: calc(.25vw + .25vh);
+	color: black;
+	overflow: scroll;
+}
+.bodyType{
+	font-family: CooperSemiBold;
+	margin: calc(1vw + 1vh);
+	font-size: calc(1vw + 1vh);
+
+-webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.introductionBodyContainer{
+	width: 50vw;
+	height: 30vh;
+	left: 25vw;
+	top: 135vh;
+	z-index: 15;
+	position: absolute;
+	-webkit-text-stroke: calc(.07vw + .07vh) black;
+	color: #e0d60d;
+}
+
+
+.floodMain{
+	width: 50vw;
+	height: 40vh;
+	left: 40vw;
+	top: 225vh;
+	z-index: 15;
+	position: absolute;
+
+	background-color: white;
+	outline-style: solid;
+	outline-color: :black;
+	outline-width: calc(.25vw + .25vh);
+	color: black;
+	overflow: scroll;
+}
+
+
+.hibMain{
+	width: 50vw;
+	height: 44vh;
+	left: 15vw;
+	top: 350vh;
+	z-index: 15;
+	position: absolute;
+
+	background-color: white;
+	outline-style: solid;
+	outline-color: :black;
+	outline-width: calc(.25vw + .25vh);
+	color: black;
+	overflow: scroll;
+}
+.earthDayMain{
+	width: 50vw;
+	height: 24vh;
+	left: 36vw;
+	top: 475vh;
+	z-index: 15;
+	position: absolute;
+
+	background-color: white;
+	outline-style: solid;
+	outline-color: :black;
+	outline-width: calc(.25vw + .25vh);
+	color: black;
+	overflow: scroll;
+}
+
+.meltMain{
+	width: 50vw;
+	height: 43vh;
+	left: 25vw;
+	top: 600vh;
+	z-index: 15;
+	position: absolute;
+
+	background-color: white;
+	outline-style: solid;
+	outline-color: :black;
+	outline-width: calc(.25vw + .25vh);
+	color: black;
+	overflow: scroll;
+}
+
+.tshirtsMain{
+	width: 50vw;
+	height: 58vh;
+	left: 30vw;
+	top: 725vh;
+	z-index: 15;
+	position: absolute;
+
+	background-color: white;
+	outline-style: solid;
+	outline-color: :black;
+	outline-width: calc(.25vw + .25vh);
+	color: black;
+	overflow: scroll;
+}
+
+.bearMain{
+	width: 50vw;
+	height: 58vh;
+	left: 40vw;
+	top: 850vh;
+	z-index: 15;
+	position: absolute;
+
+	background-color: white;
+	outline-style: solid;
+	outline-color: :black;
+	outline-width: calc(.25vw + .25vh);
+	color: black;
+	overflow: scroll;
+}
+
+.marchMain{
+	width: 50vw;
+	height: 17vh;
+	left: 35vw;
+	top: 975vh;
+	z-index: 15;
+	position: absolute;
+
+	background-color: white;
+	outline-style: solid;
+	outline-color: :black;
+	outline-width: calc(.25vw + .25vh);
+	color: black;
+	overflow: scroll;
+}
+
+.oracleMain{
+	width: 50vw;
+	height: 63vh;
+	left: 20vw;
+	top: 1100vh;
+	z-index: 15;
+	position: absolute;
+
+	background-color: white;
+	outline-style: solid;
+	outline-color: :black;
+	outline-width: calc(.25vw + .25vh);
+	color: black;
+	overflow: scroll;
+}
+
+.objectsMain{
+	width: 50vw;
+	height: 28vh;
+	left: 25vw;
+	top: 1225vh;
+	z-index: 15;
+	position: absolute;
+
+	background-color: white;
+	outline-style: solid;
+	outline-color: :black;
+	outline-width: calc(.25vw + .25vh);
+	color: black;
+	overflow: scroll;
+}
+
+.consumptionMain{
+	width: 50vw;
+	height: 28vh;
+	left: 25vw;
+	top: 1350vh;
+	z-index: 15;
+	position: absolute;
+
+	background-color: white;
+	outline-style: solid;
+	outline-color: :black;
+	outline-width: calc(.25vw + .25vh);
+	color: black;
+	overflow: scroll;
+}
+.ongoingMain{
+	width: 50vw;
+	height: 35vh;
+	left: 25vw;
+	top: 1464.5vh;
+	z-index: 15;
+	position: absolute;
+
+	background-color: white;
+	outline-style: solid;
+	outline-color: :black;
+	outline-width: calc(.25vw + .25vh);
+	color: black;
+	overflow: scroll;
+}
+
+/*–––––––INTRO––––––––––––––––––––––––––––––––––––*/
+.introImgs{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: white;
+
+	outline-style: solid;
+	outline-color: :black;
+	outline-width: calc(.25vw + .25vh);
+}
+
+.introBearGif{
+	left: 60vw;
+	top: 60vh;
+
+	width: 25vw;
+	height: 25vw;
+	z-index: 10;
+
+	background-image: url(img/cruise.gif);
+}
+.introOutWithABang{
+	left: 20vw;
+	top: 20vh;
+
+	width: 60vw;
+	height: 35vw;
+	z-index: 11;
+
+	background-image: url(img/outWithABang.png);
+}
+.floodImg{
+	left: 5vw;
+	top: 5vh;
+
+	width: 60vw;
+	height: 60vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/flood.png);
+}
+.desertImg{
+	left: 10vw;
+	top: 10vh;
+
+	width: 60vw;
+	height: 60vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/desert.png);
+}
+.elevationImg{
+	left: 15vw;
+	top: 15vh;
+
+	width: 60vw;
+	height: 60vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/yrgzElevation.png);
+}
+.aboveImg{
+	right: 1vw;
+	bottom: 20vh;
+
+	width: 20vw;
+	height: 20vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/yrgzAbove.png);
+}
+.compImg{
+	right: 2vw;
+	bottom: 10vh;
+
+	width: 20vw;
+	height: 20vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/yrgzComp.png);
+}
+/*–––––––INTRODUCTION––––––––––––––––––––––––––––––––––––*/
+.introductionImageContainer{
+	left: -500vw;
+	top: -500vh;
+
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 5;
+}
+/*–––––––HIB––––––––––––––––––––––––––––––––––––*/
+.hibContainer{
+	left: -500vw;
+	top: -500vh;
+
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 5;
+}
+.hibImg1{
+	left: 5vw;
+	top: 2vh;
+
+	width: 25vw;
+	height: 25vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/hib/hib_1.gif);
+}
+.hibImg2{
+	left: 22vw;
+	bottom: 5vh;
+
+	width: 20vw;
+	height: 20vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/hib/hib_1.jpg);
+}
+.hibImg3{
+	left: 12vw;
+	bottom: 17.5vh;
+
+	width: 20vw;
+	height: 20vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/hib/hib_3.jpg);
+}
+.hibImg4{
+	right: 1vw;
+	top: 10vh;
+
+	width: 60vw;
+	height: 60vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/hib/hib_4.jpg);
+}
+.hibImg5{
+	left: 3vw;
+	bottom: 30vh;
+
+	width: 20vw;
+	height: 20vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/hib/hib_5.jpg);
+}
+/*–––––––EARTH DAY––––––––––––––––––––––––––––––––––––*/
+.earthDayContainer{
+	left: -500vw;
+	top: -500vh;
+
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 5;
+}
+.earthDayImg1{
+	left: 60vw;
+	top: 10vh;
+
+	width: 25vw;
+	height: 40vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/earthDay/earthDayImg_1.jpg);
+}
+.earthDayImg2{
+	left: 10vw;
+	top: 10vh;
+
+	width: 35vw;
+	height: 20vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/earthDay/earthDayImg_2.jpg);
+}
+.earthDayImg3{
+	left: 30vw;
+	top: 30vh;
+
+	width: 25vw;
+	height: 40vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/earthDay/earthDayImg_3.jpg);
+}
+.earthDayImg4{
+	left: 65vw;
+	top: 60vh;
+
+	width: 25vw;
+	height: 25vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/earthDay/earthDayImg_4.jpg);
+}
+/*–––––––MELT––––––––––––––––––––––––––––––––––––*/
+.meltContainer{
+	left: -500vw;
+	top: -500vh;
+
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 5;
+	background-color: black;
+}
+/*–––––––TSHIRTS––––––––––––––––––––––––––––––––––––*/
+.tshirtsContainer{
+	left: -500vw;
+	top: -500vh;
+
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 5;
+}
+.tshirtImg1{
+	left: 3vw;
+	bottom: 30vh;
+
+	width: 30vw;
+	height: 60vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/tshirts/tshirt_1.jpg);
+}
+.tshirtImg2{
+	left: 40vw;
+	top: 20vh;
+
+	width: 15vw;
+	height: 30vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/tshirts/tshirt_2.jpg);
+}
+.tshirtImg3{
+	right: 3vw;
+	top: 30vh;
+
+	width: 30vw;
+	height: 60vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/tshirts/tshirt_3.jpg);
+}
+.tshirtImg4{
+	left: 43vw;
+	bottom: 5vh;
+
+	width: 30vw;
+	height: 35vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/tshirts/tshirt_4.jpg);
+}
+/*–––––––BEAR––––––––––––––––––––––––––––––––––––*/
+.bearContainer{
+	left: -500vw;
+	top: -500vh;
+
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 5;
+}
+.bearImg1{
+	left: 8vw;
+	bottom: 25vh;
+
+	width: 30vw;
+	height: 60vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/bear/bear_1.jpg);
+}
+/*–––––––MARCHBOOK––––––––––––––––––––––––––––––––––––*/
+.marchBookContainer{
+	left: -500vw;
+	top: -500vh;
+
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 5;
+}
+.marchImg1{
+	left: 60vw;
+	bottom: 20vh;
+
+	width: 30vw;
+	height: 30vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/marchBook/marchImg2.jpg);
+}
+.marchImg2{
+	left: 20vw;
+	bottom: 20vh;
+
+	width: 30vw;
+	height: 60vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/marchBook/marchImg3.jpg);
+}
+.marchImg3{
+	left: 5vw;
+	bottom: 10vh;
+
+	width: 30vw;
+	height: 60vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/marchBook/marchImg4.jpg);
+}
+/*––––––ORACLE––––––––––––––––––––––––––––––––––––*/
+.oracleContainer{
+	left: -500vw;
+	top: -500vh;
+
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 5;
+}
+.oracleImg1{
+	right: 10vw;
+	top: 5vh;
+
+	width: 25vw;
+	height: 60vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/oracle/oracleImg1.jpg);
+}
+.oracleImg2{
+	right: 5vw;
+	bottom: 5vh;
+
+	width: 45vw;
+	height: 28vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/oracle/oracleImg2.jpg);
+}
+.oracleImg3{
+	left: 10vw;
+	bottom: 10vh;
+
+	width: 20vw;
+	height: 70vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/oracle/oracleImg3.jpg);
+}
+/*–––––––OBJECTS––––––––––––––––––––––––––––––––––––*/
+.objectsContainer{
+	left: -500vw;
+	top: -500vh;
+
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 5;
+}
+.objectsImg1{
+	left: 55vw;
+	bottom: 30vh;
+
+	width: 40vw;
+	height: 50vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/objects/objectsImg_1.jpg);
+}
+.objectsImg2{
+	left: 70vw;
+	bottom: 10vh;
+
+	width: 20vw;
+	height: 45vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/objects/objectsImg_2.jpg);
+}
+.objectsImg3{
+	left: 30vw;
+	top: 7vh;
+
+	width: 20vw;
+	height: 60vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/objects/objectsImg_3.jpg);
+}
+.objectsImg4{
+	left: 10vw;
+	bottom: 15vh;
+
+	width: 30vw;
+	height: 40vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/objects/objectsImg_4.jpg);
+}
+/*–––––––CONSUMPTION–––––––––––––––––––––––––––––––––––*/
+.consumptionContainer{
+	left: -500vw;
+	top: -500vh;
+
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 5;
+
+	background-color: black;
+}
+
+/*–––––––ONGOING–––––––––––––––––––––––––––––––––––*/
+.ongoingContainer{
+	left: -500vw;
+	top: -500vh;
+
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 5;
+}
+.babyImg{
+	left: 42.5vw;
+	bottom: 40vh;
+
+	width: 15vw;
+	height: 20vh;
+	position: absolute;
+	z-index: 11;
+
+	background-image: url(img/baby.jpg);
+}
+/*–––––––TESTS––––––––––––––––––––––––––––––––––––*/
+/*.ifElseTest{
+	width: 50vw;
+	height: 50vh;
+	position: fixed;
+	background-image: url(img/bearGif.gif);
+	z-index: 5;
+}
+*/
+/*–––––––EXTRASTUFF––––––––––––––––––––––––––––––––––––*/
+
+/*.mainContainer{
+	width: 100vw;
+	height: 400vh;
+	font-family: CooperBold;
+	font-size: 10em;
+	color: green;
+	z-index: 5
+}
+*/
+/*.slowScroll{
+	width: 50vw;
+	height: 50vh;
+	position: absolute;
+
+	background-color: black;
+	z-index: 10;
+	left: 0vw;
+	top: 600px;
+}*/
